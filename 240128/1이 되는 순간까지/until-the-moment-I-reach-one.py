@@ -1,4 +1,3 @@
-미노삼 — 오늘 오후 6:37
 def fun(n):
     global cnt
     if n ==1:
