@@ -5,6 +5,10 @@ public class Main {
         System.out.printf("%d %d", x*2, y+25);
 
     }
+    public static void bsmor(int x ,int y){
+        System.out.printf("%d %d", x+25, y*2);
+
+    }
 
     
     public static void main(String[] args) {
@@ -19,7 +23,7 @@ public class Main {
             asmor(a, b);
         }
         else {
-            asmor(b, a);
+            bsmor(a, b);
         }
         // 여기에 코드를 작성해주세요.
     }
