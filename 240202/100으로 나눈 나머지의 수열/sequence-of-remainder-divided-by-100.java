@@ -12,7 +12,7 @@ public class Main {
             return 4;
 
         }
-        return arr(n - 1) * arr(n - 2);
+        return (arr(n - 1) * arr(n - 2))%100;
 
     }
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Main {
 
         int n = sc.nextInt();
 
-        System.out.printf("%d", arr(n)%100);
+        System.out.printf("%d", arr(n));
 
         // 여기에 코드를 작성해주세요.
     }
