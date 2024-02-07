@@ -37,7 +37,7 @@ public class Main {
 
             }
             else{
-                arr2[i] = "zz";
+                arr2[i] = "z";
 
             }
             
