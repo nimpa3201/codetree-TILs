@@ -4,15 +4,15 @@ class user{
     char name;
     int scor;
 
-    public user() {
-        this.name = 0;
-        this.scor = 0;
+    user() {
+        name = 0;
+        scor = 0;
 
     }
 
-    public user(char name, int scor){
-        this.name = name;
-        this.scor = scor;
+    user(char name1, int scor1){
+        name = name1;
+        scor = scor1;
 
     }
         
@@ -40,7 +40,7 @@ public class Main {
         int minco = users[0].scor;
 
         for(int i = 0; i < 5; i++){
-            if(minco > users[i].scor){
+            if(users[i].scor < minco){
                 minco = users[i].scor;
                 minname = users[i].name;
             }
