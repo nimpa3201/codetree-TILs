@@ -13,7 +13,7 @@ public class Main {
 
         int m2 = sc.nextInt();
         int d2 = sc.nextInt();
-        int c = 0;
+        int c = 1;
 
         while(true){
             if(m1 == m2 && d1 == d2){
@@ -29,7 +29,7 @@ public class Main {
 
             }
         }
-        c++;
+        
         
         System.out.printf("%d",c);
 
