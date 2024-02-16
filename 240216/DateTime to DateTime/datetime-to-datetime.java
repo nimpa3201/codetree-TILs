@@ -15,8 +15,10 @@ public class Main {
 
         
         while(true) {
-            if(day1 == day2 && hour1 == hour2 && mins1 == mins2)
+            if(day1 == day2 && hour1 == hour2 && mins1 == mins2){
                 break;
+            }
+            
             mins1++;
             c++;
 
