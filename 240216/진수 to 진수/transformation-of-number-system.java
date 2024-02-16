@@ -22,13 +22,13 @@ public class Main {
 
         while(true){
             if(c < 2){
-                arr[q++] = c%2;
+                arr[q++] = c%b;
 
                 break;
             }
             
-            arr[q++] = c%2;
-            c /= 2;
+            arr[q++] = c%b;
+            c /= b;
 
         }
 
