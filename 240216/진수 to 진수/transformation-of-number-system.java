@@ -21,7 +21,7 @@ public class Main {
         int q = 0;
 
         while(true){
-            if(c < 2){
+            if(c < b){
                 arr[q++] = c%b;
 
                 break;
