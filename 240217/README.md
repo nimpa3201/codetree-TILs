@@ -13,7 +13,7 @@
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
 |[Novice Mid / 시뮬레이션 I / 구간 칠하기](https://www.codetree.ai/missions?missionId=5)|[[개념]블럭쌓는 명령2](https://www.codetree.ai/missions/5/problems/block-stacking-commands2)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/nimpa3201/codetree-TILs/blob/main/240217/%EB%B8%94%EB%9F%AD%EC%8C%93%EB%8A%94%20%EB%AA%85%EB%A0%B92/block-stacking-commands2.java)|
-|[Novice Mid / 시뮬레이션 I / 구간 칠하기](https://www.codetree.ai/missions?missionId=5)|[[개념]최대로 겹치는 구간](https://www.codetree.ai/missions/5/problems/maximum-overlapped-segments)|![보통][medium]|![Failed][failed]|[링크](https://github.com/nimpa3201/codetree-TILs/blob/main/240217/%EC%B5%9C%EB%8C%80%EB%A1%9C%20%EA%B2%B9%EC%B9%98%EB%8A%94%20%EA%B5%AC%EA%B0%84/maximum-overlapped-segments.java)|
+|[Novice Mid / 시뮬레이션 I / 구간 칠하기](https://www.codetree.ai/missions?missionId=5)|[[개념]최대로 겹치는 구간](https://www.codetree.ai/missions/5/problems/maximum-overlapped-segments)|![보통][medium]|![Passed][passed]|[링크](https://github.com/nimpa3201/codetree-TILs/blob/main/240217/%EC%B5%9C%EB%8C%80%EB%A1%9C%20%EA%B2%B9%EC%B9%98%EB%8A%94%20%EA%B5%AC%EA%B0%84/maximum-overlapped-segments.java)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
