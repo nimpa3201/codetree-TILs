@@ -37,9 +37,8 @@ public class Main{
 
             } 
 
-            c *= q;
-            q++;
-
+            c++;
+            
 
 
         }
