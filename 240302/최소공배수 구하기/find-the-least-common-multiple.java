@@ -16,37 +16,33 @@ public class Main{
     }
 
     public static void arr(int n, int m){
-
-        int max = 0;
-        int c = 1;
-
+        int c = 0;
 
         if(n >= m){
-            while(1>0) {
-                if(n % m == 0){
-                    max = n;
-                    break;
-
-                }
-                c++;
-                n *= c;
-            }
+            c = n;
 
         }
-
         else{
-            while(1>0) {
-                if(m % n == 0){
-                    max = m;
-                    break;
-
-                }
-                c++;
-                m *= c;
-
-            }
+            c = m;
 
         }
+        int max = 0;
+        int q = 1;
+
+
+        while(true){
+            if((c % n == 0) && (c % m == 0)){
+                max = c;
+                break;
+
+            } 
+
+            c *= q;
+            q++;
+
+        }
+
+        
         System.out.printf("%d", max);
 
     }
