@@ -11,7 +11,7 @@ public class Main {
         int c = 0;
 
         for(int i = a; i <= b ; i++){
-            if(arr(i)){
+            if(arr(i) && !(i == 1)){
                 c += i;
 
             }    
@@ -23,12 +23,14 @@ public class Main {
     }
 
     public static boolean arr(int n){
+        
         for(int i = 2; i < n; i++){
             if(n % i == 0){
                 return false;
 
             }
-       }
+        }
+        
         return true; 
     }
 }
