@@ -13,8 +13,8 @@ fun main(){
     // 가로 검색
     for(r in 0 until n){
         var cnt = 1
-        for(c in 1 until n){
-            if(array[r][c] == array[r][c-1]){
+        for(c in 0 until n-1){
+            if(array[r][c] == array[r][c+1]){
                 cnt++
             }else{
                 cnt == 1
@@ -24,6 +24,10 @@ fun main(){
                 answer++
                 break
             }
+        }
+
+        if(cnt == n){
+            answer++
         }
     }
 
@@ -41,6 +45,10 @@ fun main(){
                 answer++
                 break
             }
+        }
+
+        if(cnt == n){
+            answer++
         }
     }
 
