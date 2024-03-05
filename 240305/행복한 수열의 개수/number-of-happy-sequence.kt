@@ -9,46 +9,46 @@ fun main(){
     }
 
     var answer = 0
+    // 1 x 1 처리
+    if(n == 1){
+        println(2)
+        return
+    }
 
-    // 가로 검색
+    // 나머지 케이스
+    // 가로 탐색
     for(r in 0 until n){
-        var cnt = 1
-        for(c in 0 until n-1){
-            if(array[r][c] == array[r][c+1]){
-                cnt++
+        var count = 1
+        for(c in 1 until n){
+            if(array[r][c] == array[r][c-1]){
+                count++
             }else{
-                cnt == 1
+                count = 1
             }
 
-            if(cnt >= m){
+
+            if(count >= m){
                 answer++
                 break
             }
-        }
-
-        if(cnt == n){
-            answer++
         }
     }
 
-    // 세로 탐색
+    // 가로 탐색
     for(c in 0 until n){
-        var cnt = 1
+        var count = 1
         for(r in 1 until n){
             if(array[r][c] == array[r-1][c]){
-                cnt++
+                count++
             }else{
-                cnt == 1
+                count = 1
             }
 
-            if(cnt >= m){
+
+            if(count >= m){
                 answer++
                 break
             }
-        }
-
-        if(cnt == n){
-            answer++
         }
     }
 
