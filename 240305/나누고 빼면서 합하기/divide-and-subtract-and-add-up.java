@@ -13,6 +13,8 @@ public class Main {
             arr[i] = sc.nextInt();
 
         }
+        //arr2(arr, m);
+
         System.out.printf("%d",arr2(arr, m));
 
 
@@ -21,9 +23,11 @@ public class Main {
     public static int arr2(int[] arr, int m){
         int s = 0;
 
-        while(m > 1){
+        while(m > 0){
 
-            s = arr[m];
+            s += arr[m-1];
+            
+
 
             if(m % 2 == 0){
                 m /= 2;
@@ -33,6 +37,7 @@ public class Main {
                 m -= 1;
 
             }
+            
         } 
         return s;
 
