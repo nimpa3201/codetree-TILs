@@ -13,13 +13,16 @@ public class Main {
     }
 
     public static void arr(int n){
+
         if(n == 0){
             return;
-
         }
-        arr(n -1);
         System.out.printf("HelloWorld\n");
+        arr(n - 1);
+        
 
+        
+        
     }
 
 }
