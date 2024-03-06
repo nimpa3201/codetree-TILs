@@ -4,6 +4,10 @@ cnt1=1
 cnt2=1
 ans =0
 result=0
+if n ==1 and m==1:
+    print(2)
+    exit()
+
 for i in range(n):
     tmp = arr[i][0]
     for j in range(n-1):
