@@ -5,8 +5,10 @@ cnt2=1
 ans =0
 result=0
 if n ==1 and m==1:
-    print(2)
-    exit()
+    fun()
+
+def fun():
+    return print(2)
 
 for i in range(n):
     tmp = arr[i][0]
@@ -20,8 +22,7 @@ for i in range(n):
             cnt1=1
         ans = max(ans,cnt1)
     if ans >=m :
-        result+= 1 
-    #print(ans)   
+        result+= 1   
     cnt1 =1
     ans =0
 
@@ -37,8 +38,7 @@ for i in range(n):
             cnt2=1
         ans = max(ans,cnt2)
     if ans >=m :
-        result+= 1
-    #print(ans)    
+        result+= 1  
     cnt2 =1
     ans=0
 print(result)
