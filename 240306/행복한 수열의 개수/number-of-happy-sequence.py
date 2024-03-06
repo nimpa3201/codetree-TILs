@@ -4,18 +4,16 @@ cnt1=1
 cnt2=1
 ans =0
 result=0
-def fun():
-    return print(2)
-
 if n ==1 and m==1:
-    fun()
-else:
-    for i in range(n):
+    print(2)
+    exit()
+
+for i in range(n):
     tmp = arr[i][0]
     for j in range(n-1):
         if tmp == arr[i][j+1]:
             cnt1+=1
-            
+           
         else:
             tmp = arr[i][j+1]
             ans = max(ans,cnt1)
@@ -27,7 +25,7 @@ else:
     ans =0
 
 
-    for i in range(n):
+for i in range(n):
     tmp = arr[0][i]
     for j in range(n-1):
         if tmp == arr[j+1][i]:
@@ -41,4 +39,4 @@ else:
         result+= 1  
     cnt2 =1
     ans=0
-    print(result)
+print(result)
