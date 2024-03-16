@@ -31,6 +31,10 @@ public class Main {
             }
         }
         c2++;
+        if(c2 < c){
+            c2 = c;
+
+        }
 
         System.out.printf("%d", c2);
 
