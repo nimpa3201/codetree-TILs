@@ -18,19 +18,20 @@ public class Main {
 
 
         for(int i = 0; i < n; i++){
-            if( i == 0 || arr[i] != arr[i -1]){
-                if(c2 < c){
-                    c2 = c;
-                    c = 0;
-                }
+            if( i == 0 || arr[i] == arr[i -1]){
+                c++;
             }
             else{
-                c++;
+                if(c2 < c){
+                    c2 = c;
+                    
+                }
+                c = 0;
 
             }
         }
         c2++;
-        
+
         System.out.printf("%d", c2);
 
 
