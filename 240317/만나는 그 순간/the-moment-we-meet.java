@@ -71,12 +71,13 @@ public class Main {
 
         }
 
-        if(arr[z-1] == arr2[z-1]){
-            System.out.printf("%d", -1);    
+        if(arr[z] == 0 && arr2[z] == 0){
+            System.out.printf("%d ", -1);    
         }
         else{
-            System.out.printf("%d", z);
+            System.out.printf("%d ", z);
         }
+
 
 
         
