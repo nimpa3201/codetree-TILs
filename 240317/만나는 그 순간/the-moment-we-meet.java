@@ -45,19 +45,14 @@ public class Main {
 
             for(int j = 1; j <= w; j++){
                 if(q == 'R'){
-                    
                     arr2[c] = c2;
                     c2++;
-
                 }
                 else{
                     arr2[c] = c2;
                     c2--;
-
                 }
                 c++;
-
-
             }
         }
         int z = 1;
