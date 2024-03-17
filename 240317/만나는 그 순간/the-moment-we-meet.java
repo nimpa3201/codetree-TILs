@@ -7,8 +7,8 @@ public class Main {
 
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[] arr = new int[100];
-        int[] arr2 = new int[100];
+        int[] arr = new int[1001];
+        int[] arr2 = new int[1001];
         int c = 0;
         int c2 = 0;
 
