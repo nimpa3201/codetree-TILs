@@ -32,8 +32,11 @@ for dx , step in B :
         for i in range(step):
             Bstep.append(Bstep[idx]-1)
             idx +=1
-
+Flag = False
 for i in range(len(Astep)):
     if Astep[i] == Bstep[i]!=0:
         print(i)
+        Flag =True
         break
+if not Flag:
+    print(-1)
