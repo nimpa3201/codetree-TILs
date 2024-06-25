@@ -7,14 +7,15 @@ def fun(n):
     if n ==1:
         return cnt
     
-    if n%2 ==0:
-        cnt+=1
-        return fun(n//2)
+    else:
+        if n%2 ==0:
+            cnt+=1
+            return fun(n//2)
    
 
-    else:
-        cnt+=1
-        return fun(3*n+1)
+        else:
+            cnt+=1
+            return fun(3*n+1)
        
        
-print(fun(3))
+print(fun(num))
