@@ -21,6 +21,8 @@ def maxNum(k):
                 visited2[j]=0
     return result
                
-
+if n ==1:
+    print(grid[0][0])
+else:
                 
-print(maxNum(0))
+    print(maxNum(0))
