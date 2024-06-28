@@ -9,6 +9,8 @@ def circle(arr,graph):
     for i in range(n):
         if arr[i] ==i:
             return -1
+        if graph[arr[i]][i] ==0:
+            return -1
         
         tmp+= graph[arr[i]][i]
     ans = min(ans,tmp)
