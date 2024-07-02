@@ -21,4 +21,4 @@ def dfs(n,visited):
 
 dfs(1,visited)
 visited[1]=1
-print(cnt-1)
+print(cnt-1 if cnt !=0 else 0)
