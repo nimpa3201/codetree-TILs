@@ -13,10 +13,6 @@ def select(arr,n,sel):
     return sel[0]
 
 
-
-
-
-
 def perm(k,n,arr):
     global max_num
     global visited
@@ -33,8 +29,6 @@ def perm(k,n,arr):
             visited[i] =0
     
             
-#max_num =0
+
 perm(0,n,[])
 print(max_num)
-#max_num = max(max_num,result)
-#print(max_num)
