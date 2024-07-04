@@ -16,7 +16,7 @@ def bfs():
         for i in range(4):
             nx = x+dirs[i][0]
             ny = y+dirs[i][1]
-            if 0<=nx<n and 0<=ny<n and not visited[nx][ny] and graph[nx][ny]!=1:
+            if 0<=nx<n and 0<=ny<n and not visited[nx][ny] and graph[nx][ny]!=1 and graph[nx][ny]!=2:
                 visited[nx][ny]= 1
                 q.append((nx,ny,step+1))
                
@@ -33,6 +33,10 @@ for i in range(n):
 for x,y in dot:
     visited = [[0 for _ in range(n)]for _ in range(n)]
     q.append((x,y,0))
+    visited[x][y]=1
+    
     result[x][y] = bfs()
-    print(bfs())
-print(result)
+    bfs()
+    
+for arr in result:
+    print(*arr)
