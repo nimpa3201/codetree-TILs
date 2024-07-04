@@ -34,6 +34,7 @@ for x,y in dot:
     visited = [[0 for _ in range(n)]for _ in range(n)]
     q.append((x,y,0))
     visited[x][y]=1
+    graph[x][y] =0
     
     result[x][y] = bfs()
     bfs()
