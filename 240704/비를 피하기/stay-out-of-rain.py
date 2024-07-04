@@ -1,0 +1,38 @@
+from collections import deque
+n,h,m = map(int,input().split())
+graph = [list(map(int,input().split())) for _ in range(n)]
+visited = [[0 for _ in range(n)]for _ in range(n)]
+result =[[0 for _ in range(n)]for _ in range(n)]
+q =deque()
+dirs = {0 : (0,1), 1: (1,0), 2: (-1,0), 3:(0,-1)}
+def bfs():
+    ans =[]
+    while q: 
+        x,y,step = q.popleft()
+        if graph[x][y] == 3:
+            return visited
+            
+        for i in range(4):
+            nx = x+dirs[i][0]
+            ny = y+dirs[i][1]
+            if 0<=nx<n and 0<=ny<n and not visited[nx][ny] and graph[nx][ny]!=1:
+        
+                q.append((nx,ny,step+1))
+                visited[nx][ny]= step+1
+
+
+
+                
+for i in range(n):
+    for j in range(n):
+        if graph[i][j] ==2:
+            q.append((i,j,0))
+            visited[i][j] =1
+            bfs()
+
+for i in range(n):
+    for j in range(n):
+        if graph[i][j]==2:
+            result[i][j] = visited[i][j]
+
+print(result)
