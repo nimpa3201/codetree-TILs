@@ -10,9 +10,10 @@ if m ==1:
 
 
 def remove(board,arr,k):
-    for i in range(k[1]-arr[k[1]][1]+1,n):
-        if board[i] == k[0]:
-            board[i] =0
+    for r in range(len(k)):
+        for i in range(k[r][1]-arr[k[r][1]][1]+1,n):
+            if board[i] == k[r][0]:
+                board[i] =0
     temp  = [0] * n
     temp_idx = 0
     for i in range(n):
@@ -26,14 +27,12 @@ def remove(board,arr,k):
 
 
 def numPow(arr,k):  #터질 숫자 리턴해줌
-
-    numIdx=()
-    global bomb 
+    global bomb
+    numIdx=[]
     for num,cnt,idx in arr:
         if cnt >=k: 
-            numIdx =(num,idx)
-            return numIdx
-    return -1
+            numIdx.append((num,idx))
+    return numIdx
 
 
 
@@ -53,7 +52,11 @@ def countSequence(arr): # 연속되는 것 세는 함수
     return store
 
 
-
+# arr1=countSequence(bomb)
+# key =numPow(arr1,m) 
+# result =remove(bomb,arr1,key)
+# bomb = result
+# print(bomb)
 
 
 
@@ -61,19 +64,17 @@ while True:
 
     arr1=countSequence(bomb)
     key =numPow(arr1,m) #처음 k 이상인 숫자와 인덱스 반환
-    if key ==-1:
+    if key ==[]:
         break
     result =remove(bomb,arr1,key)
     bomb = result
 
-
-
 ans =0
-for i  in result:
+for i  in bomb:
     if i !=0:
         ans+=1
 
 print(ans)
 
 for i in range(ans):
-    print(result[i])
+    print(bomb[i])
