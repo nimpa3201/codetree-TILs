@@ -13,5 +13,5 @@ def comb(s,cnt,tmp,ans):
     result = max(result,ans)
 
 
-comb(0,0,[],1)
+comb(0,0,[],0)
 print(result)
