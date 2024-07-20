@@ -17,15 +17,9 @@ def select(start,cnt,arr,tmp):
             for j in range(i+1,len(tmp)):
                #print(tmp[i][0],tmp[i][1],tmp[j][0],tmp[j][1])
                 ans = (tmp[i][0]-tmp[j][0])**2 + (tmp[i][1] -tmp[j][1])**2
-        result = max(result,ans)
+                result = max(result,ans)
         result1 =min(result1,result)
-    
-        
-        
-
-
-            
-    
+       
             
         
 
