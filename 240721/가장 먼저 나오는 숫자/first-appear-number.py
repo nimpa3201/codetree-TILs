@@ -1,5 +1,5 @@
 n,m = map(int,input().split())
-arr = list(map(int,input().split()))
+arr = [-1]+list(map(int,input().split()))
 targets = list(map(int,input().split()))
 
 
@@ -21,6 +21,6 @@ def lower_bound(target):
 
 for i in targets:
     if arr[lower_bound(i)] == i and lower_bound(i) <= n:
-        print(lower_bound(i)+1)
+        print(lower_bound(i))
     else:
         print(-1)
