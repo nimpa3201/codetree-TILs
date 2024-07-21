@@ -1,5 +1,5 @@
 n,m = map(int,input().split())
-arr = [-1]+list(map(int,input().split()))
+arr = [0]+list(map(int,input().split()))
 targets = list(map(int,input().split()))
 
 
