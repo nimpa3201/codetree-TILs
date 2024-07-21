@@ -13,10 +13,14 @@ def lower_bound(target):
         if arr[mid]>= target:
             min_idx = min(min_idx,mid)
             right = mid -1
+        
+      
         else:
             left = mid +1
-    return min_idx+1
+    return min_idx
 
 for i in targets:
-    ans =lower_bound(i)
-    print(ans if  ans < n-1 else -1)
+    if arr[lower_bound(i)] == i and lower_bound(i) <= n:
+        print(lower_bound(i)+1)
+    else:
+        print(-1)
