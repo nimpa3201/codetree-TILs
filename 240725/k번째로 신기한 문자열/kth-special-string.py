@@ -16,8 +16,8 @@ for elem in dic:
         if elem[i] ==t[i]:
             flag = True
         else:
-            
             flag=False
+            break
     if flag:
         t_arr.append(elem)
     
