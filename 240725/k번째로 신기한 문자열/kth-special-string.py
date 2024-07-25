@@ -23,6 +23,6 @@ for elem in dic:
     else:
         arr.append(elem)
 t_arr.sort()
-arr.sort()
-ans = t_arr + arr
+
+ans = t_arr 
 print(ans[k-1])
