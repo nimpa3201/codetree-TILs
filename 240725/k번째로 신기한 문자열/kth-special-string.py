@@ -20,9 +20,7 @@ for elem in dic:
             flag=False
     if flag:
         t_arr.append(elem)
-    else:
-        arr.append(elem)
+    
 t_arr.sort()
 
-ans = t_arr 
-print(ans[k-1])
+print(t_arr[k-1])
