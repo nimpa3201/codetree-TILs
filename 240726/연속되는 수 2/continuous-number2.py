@@ -3,6 +3,10 @@ arr =[]
 for _ in range(n):
     arr.append(int(input()))
 
+if n ==1:
+    print(1)
+    exit()
+
 ans =0
 cnt=1
 for i in range(n-1):
