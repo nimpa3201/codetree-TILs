@@ -2,7 +2,7 @@ n = int(input())
 arr =[]
 for _ in range(n):
     arr.append(int(input()))
-ans,cnt= 0,0
+ans,cnt= 0,1
 
 if n ==1:
     print(1)
