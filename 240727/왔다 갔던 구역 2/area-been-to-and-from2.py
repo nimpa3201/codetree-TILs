@@ -1,7 +1,7 @@
 n = int(input())
 
 cnt =0
-arr = [0 for _ in range(23)]
+arr = [0 for _ in range(10001)]
 start =10
 for _ in range(n):
     step,direct = input().split()
