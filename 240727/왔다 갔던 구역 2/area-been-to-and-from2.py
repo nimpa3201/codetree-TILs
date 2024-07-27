@@ -10,12 +10,12 @@ for _ in range(n):
     if direct =="R":
         for i in range(start+1,start+step+1):
             arr[i] +=1
-        start = start+step+1
+        start = start+step
 
     if direct == "L":
         for i in range(start-1,start-step-1,-1):
             arr[i]+=1
-        start = start-step-1
+        start = start-step
 for i in range(len(arr)):
     if arr[i] >=2:
         cnt+=1
