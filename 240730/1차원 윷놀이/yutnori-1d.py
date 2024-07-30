@@ -1,31 +1,26 @@
-import sys
-sys.setrecursionlimit(100000)
+# n = n번의 턴
+# m = 1-m 까지 
+# k 말의수
 
-n, m, k = map(int, input().split())
-nums = list(map(int, input().split()))
-
-max_cnt = 0
-
-def choose(num, acc, cnt):
-    global max_cnt
-    if acc >= m:
-        cnt+=1
-        acc=1
+N,m,k=map(int,input().split())
+nums =list(map(int,input().split()))
+player = [1]*k
+ans =0
+def play (n):
+    global ans
+    if n==N:
+        count=0
+        for t in player:
+            if t >= m :
+                count +=1
+        ans = max(ans,count)
+        # print(count)
+        return 
     
+    for i in range (k):
+        player[i]+= nums[n]
+        play(n+1)
+        player[i]-=nums[n]
     
-    if num == n+1:
-        if cnt > max_cnt:
-            max_cnt = cnt
-        return
-    
-   
- 
-    for i in nums:
-        acc+=i
-        choose(num + 1, acc , cnt) 
-        acc -= i
-    
-    
-
-choose(1, 1, 0)
-print(max_cnt)
+play(0)
+print(ans)
