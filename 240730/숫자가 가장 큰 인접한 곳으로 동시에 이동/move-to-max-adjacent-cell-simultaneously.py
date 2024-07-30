@@ -8,16 +8,16 @@ for _ in range(m):
 
 
 def move():
-    global nextcount
+    global nextcount 
     dirs = { 0 :(-1,0) , 1 :(1,0), 2:(0,-1), 3:(0,1)}
     for i in range(n):
         for j in range(n):
             if count[i][j] ==1:
                 x,y = i,j
                 max_val =0             
-                for i in range(4):
-                    nx = x + dirs[i][0]
-                    ny = y + dirs[i][1]
+                for k in range(4):
+                    nx = x + dirs[k][0]
+                    ny = y + dirs[k][1]
                     if 0<=nx<n and 0<=ny<n:
                         if max_val < arr[nx][ny]:
                             max_val = arr[nx][ny]
@@ -41,29 +41,10 @@ def remove():
     
             
 
-
-    
-
-
-                    
-                            
-
-                           
-               
-                    
-                      
-                  
-
 def simulation():
  
     move()
     remove()
-
-
-
-
-
-
 
 
 for _ in range(t):
