@@ -6,7 +6,7 @@ n,m = map(int,input().split())
 dist = [ INF for _ in range(n+1) ] 
 graph = [[] for _ in range(n+1)]
 pq =[]
-visited = [0 for _ in range(n)]
+visited = [0 for _ in range(n+1)]
 for _ in range(m):
     a,b,w = map(int,input().split())
     graph[a].append((w,b))
