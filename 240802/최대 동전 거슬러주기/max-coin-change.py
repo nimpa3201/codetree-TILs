@@ -2,7 +2,7 @@ import sys
 n,m = map(int,input().split())
 coin = list(map(int,input().split()))
 INT_MIN = - sys.maxsize
-dp = [ INT_MIN for _ in range(m+1)]
+dp = [ -1for _ in range(m+1)]
 dp[0] =0
 
 for i in range(1,m+1):
