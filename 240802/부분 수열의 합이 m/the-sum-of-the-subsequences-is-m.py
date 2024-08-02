@@ -6,7 +6,6 @@ nums = list(map(int, input().split()))
 
 dp = [INF for _ in range(m + 1)]
 dp[0] = 0
-dp_num = [[] for _ in range(m + 1)]
 
 for j in range(n):
     for i in range(m, nums[j] - 1, -1):  # 중복 방지
