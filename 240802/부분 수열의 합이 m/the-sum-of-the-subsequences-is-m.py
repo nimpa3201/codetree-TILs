@@ -13,4 +13,4 @@ for j in range(n):
         if i >=nums[j]:
             dp[i] =min(dp[i],dp[i-nums[j]]+1)
 
-print(dp[m]if dp[m] != INF else -1])
+print(dp[m]if dp[m] != INF else -1)
