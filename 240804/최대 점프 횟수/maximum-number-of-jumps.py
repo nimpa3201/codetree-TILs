@@ -1,6 +1,7 @@
+import sys
 n = int(input())
 arr = list(map(int,input().split()))
-dp = [ -1 for _ in range(n)]
+dp = [ -sys.maxsize for _ in range(n)]
 dp[0] =0
 
 for i in range(1,n):
