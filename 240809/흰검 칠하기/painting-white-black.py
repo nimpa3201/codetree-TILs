@@ -5,7 +5,7 @@ for _ in range(n):
     step = int(step)
     cmd.append((step,direct))
 arr = [[2,0,0] for _ in range(200000)]
-start = 50000
+start = 100000
 for step,direct in cmd :
     if direct =="R":
         for i in range(start,start+step):
