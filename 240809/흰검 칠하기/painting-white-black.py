@@ -27,15 +27,10 @@ for step,direct in cmd :
    
 d= dict()
 d ={ -1: 0, 1: 0, 0: 0}
-for i , _, _ in arr:
-    if i ==1:
-        d[i]+=1
-    elif i ==-1:
-        d[i]+=1
-    elif i ==0:
-        d[i]+=1
-    else:
-        continue
+for i, _, _ in arr:
+    if i in d:
+        d[i] += 1
+
 ans = d.values()
 print(*ans)
  # 흰 검 회색
