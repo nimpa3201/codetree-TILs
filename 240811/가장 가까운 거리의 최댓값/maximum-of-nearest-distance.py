@@ -4,6 +4,7 @@ n,m = map(int,input().split())
 
 nodes = {i for i in range(1,n+1)}
 arr =set(map(int,input().split()))
+arr1 = list(arr)
 nodes = nodes-arr
 
 INF = sys.maxsize
@@ -34,7 +35,7 @@ def dijkstra(start):
             if new_dist < dist[target_index]:
                 dist[target_index] = new_dist
                 heapq.heappush(pq,(new_dist,target_index))
-    return min(dist[1],dist[2],dist[5])
+    return min(dist[arr1[0]],dist[arr1[1]],dist[arr1[2]])
     
 ans =-1
 for start in nodes:
