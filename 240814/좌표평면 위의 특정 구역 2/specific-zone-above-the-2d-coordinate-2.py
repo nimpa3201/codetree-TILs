@@ -1,9 +1,10 @@
+import sys
 n = int(input())
 dots = []
 for _ in range(n):
     s,e = map(int,input().split())
     dots.append((s,e))
-ans =1e9
+ans =sys.maxsize
 for i in range(n):
     dot =[]
     for j in range(n):
