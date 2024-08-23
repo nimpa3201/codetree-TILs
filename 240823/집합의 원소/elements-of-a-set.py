@@ -1,29 +1,32 @@
-import sys
-n,m = map(int,input().split())
-parent = [0]+[i for i in range(1,n+1)]
+n, m = tuple(map(int, input().split()))
+uf = [0] * (n + 1)
 
-def find_parent(x) :
-    if parent[x] !=x:
-        parent[x] = find_parent(parent[x])
-    return parent[x]
+for i in range(1, n + 1):
+    uf[i] = i
 
-def union_parent(a,b):
-    a = find_parent(a)
-    b = find_parent(b)
 
-    if a > b :
-        parent[a] =b
-    else:
-        parent[b] =a
+
+def find(x):
+    if uf[x] == x:
+        return x
+
+    uf[x] = find(uf[x])
+    return uf[x]
+
+
+
+def union(x, y):
+    X, Y = find(x), find(y)
+    uf[X] = Y
 
 
 for _ in range(m):
-    cmd,a,b = map(int,input().split())
+    q_type, a, b = tuple(map(int, input().split()))
 
-    if cmd ==0 :
-        union_parent(a,b)
-    if cmd == 1:
-        if find_parent(a) == find_parent(b):
+    if q_type == 0:
+        union(a, b)
+    else:
+        if find(a) == find(b):
             print(1)
         else:
             print(0)
