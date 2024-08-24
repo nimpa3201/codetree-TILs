@@ -25,4 +25,5 @@ for _ in range(m):
     if arr[0] == "x":
         union(int(arr[1]),int(arr[2]))
     else:
-        print(size[int(arr[1])])
+        root = find(int(arr[1]))
+        print(size[root])
