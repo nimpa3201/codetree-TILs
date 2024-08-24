@@ -15,7 +15,7 @@ def union(x,y):
         if size[X] < size[Y]:
             X,Y = Y,X
         uf[Y] = X
-    size[X]+=size[Y]
+        size[X]+=size[Y]
 
 
 
