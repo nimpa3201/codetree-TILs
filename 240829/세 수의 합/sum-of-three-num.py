@@ -1,18 +1,18 @@
 n,k = map(int,input().split())
 arr = list(map(int,input().split()))
-cnt =0
 
-def fun(num,tmp,start):
-    global cnt
-    if num == 3:
-        if sum(tmp) == k:
-            cnt+=1
-        return
+count = dict()
+ans =0
+for i in range(n):
+    diff = k - arr[i]
+    for j in range(i+1,n):
+        diff2 = diff - arr[j]
+        
+        if diff2 in count:
+            ans += count[diff2]
 
-    for i in range(start,n):
-        tmp.append(arr[i])
-        fun(num+1,tmp,i+1)
-        tmp.pop()
-
-fun(0,[],0)
-print(cnt)
+    if arr[i] not in count:
+        count[arr[i]] =1
+    else:
+        count[arr[i]] +=1
+print(ans)
