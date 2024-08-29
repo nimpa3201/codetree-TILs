@@ -22,9 +22,8 @@ minVal = float('inf')
 
 def backtrack(index, cnt):
     global minVal
-    if index == n:
-        if cnt == m:
-            minVal = min(minVal, findTwoCoordinates(ans))
+    if cnt == m:
+        minVal = min(minVal, findTwoCoordinates(ans))
         return 
     
     for i in range(index, n):
