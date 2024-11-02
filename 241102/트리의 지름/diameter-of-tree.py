@@ -26,5 +26,6 @@ def dfs(parent,acc):
 visited[1] =1
 start,ans = dfs(1,0)
 visited = [ 0 for _ in range(n+1)]
+visited[start]=1
 end = dfs(start,0)
-print(end[0])
+print(end[1])
