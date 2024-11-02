@@ -19,7 +19,7 @@ def dfs(parent,acc):
     
     if ans < acc:
         ans =acc
-        idx = child
+        idx = parent
     return idx ,ans
 
 
